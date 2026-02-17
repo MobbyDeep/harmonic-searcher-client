@@ -1,0 +1,16 @@
+[package]
+name = "harmonic-searcher-client"
+version = "0.1.0"
+edition = "2021"
+description = "Rust client library for Harmonic searcher APIs"
+license = "MIT"
+
+[dependencies]
+prost = "0.14.3"
+prost-types = "0.14.3"
+thiserror = "2"
+tonic = { version = "0.14.4", features = ["transport"] }
+tonic-prost = "0.14.2"
+
+[build-dependencies]
+tonic-prost-build = "0.14.2"
