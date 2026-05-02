@@ -8,14 +8,13 @@ description = "Wrapper around the generated gRPC. Adds auth and retry semantics.
 futures-util = "0.3.28"
 harmonic-protos = { path = "../harmonic_protos" }
 log = "0.4"
-prost-types = "0.12"
+prost-types = "0.13"
 solana-client = "3"
 solana-commitment-config = "3"
-# solana-keypair 3.1.2 currently fails to compile with its five8 dependency.
-solana-keypair = "=3.0.0"
+solana-keypair = "3"
 solana-metrics = "3"
 solana-sdk = "3"
 solana-transaction-status = "3"
 thiserror = "1.0.40"
 tokio = "1"
-tonic = { version = "0.10", features = [ "tls", "tls-roots", "tls-webpki-roots"] }
+tonic = { version = "0.13", features = ["tls-ring", "tls-webpki-roots"] }

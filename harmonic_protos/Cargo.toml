@@ -7,13 +7,12 @@ publish = false
 [dependencies]
 bincode = "1.3.3"
 bytes = "1.4.0"
-prost = "0.12"
-prost-types = "0.12"
+prost = "0.13"
+prost-types = "0.13"
 solana-perf = "3"
-# solana-keypair 3.1.2 currently fails to compile with its five8 dependency.
-solana-keypair = "=3.0.0"
+solana-keypair = "3"
 solana-sdk = "3"
-tonic = "0.10"
+tonic = "0.13"
 
 [build-dependencies]
-tonic-build = "0.10"
+tonic-build = "0.13"
