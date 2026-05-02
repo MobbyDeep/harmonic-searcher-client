@@ -5,11 +5,8 @@ use std::{
 };
 
 use bincode::serialize;
-use solana_perf::packet::{Packet, PacketBatch, PacketRef, PACKET_DATA_SIZE};
-use solana_sdk::{
-    packet::{Meta, PacketFlags},
-    transaction::VersionedTransaction,
-};
+use solana_perf::packet::{Meta, Packet, PacketBatch, PacketFlags, PacketRef, PACKET_DATA_SIZE};
+use solana_sdk::transaction::VersionedTransaction;
 
 use crate::{
     packet::{Meta as ProtoMeta, Packet as ProtoPacket, PacketFlags as ProtoPacketFlags},

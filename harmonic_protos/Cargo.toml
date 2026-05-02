@@ -9,8 +9,10 @@ bincode = "1.3.3"
 bytes = "1.4.0"
 prost = "0.12"
 prost-types = "0.12"
-solana-perf = "2"
-solana-sdk = "2"
+solana-perf = "3"
+# solana-keypair 3.1.2 currently fails to compile with its five8 dependency.
+solana-keypair = "=3.0.0"
+solana-sdk = "3"
 tonic = "0.10"
 
 [build-dependencies]
