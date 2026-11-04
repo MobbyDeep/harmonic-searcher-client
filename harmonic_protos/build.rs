@@ -1,4 +1,4 @@
-use tonic_build::configure;
+use tonic_prost_build::configure;
 
 fn main() {
     configure()

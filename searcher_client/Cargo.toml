@@ -8,13 +8,13 @@ description = "Wrapper around the generated gRPC. Adds auth and retry semantics.
 futures-util = "0.3.28"
 harmonic-protos = { path = "../harmonic_protos" }
 log = "0.4"
-prost-types = "0.13"
-solana-client = "3"
+prost-types = "0.14"
+solana-client = "4.4"
 solana-commitment-config = "3"
-solana-keypair = "3"
-solana-metrics = "3"
-solana-sdk = "3"
-solana-transaction-status = "3"
+solana-keypair = "4"
+solana-metrics = "4.4"
+solana-sdk = "5"
+solana-transaction-status = "4.4"
 thiserror = "1.0.40"
 tokio = "1"
-tonic = { version = "0.13", features = ["tls-ring", "tls-webpki-roots"] }
+tonic = { version = "0.14", features = ["tls-ring", "tls-webpki-roots"] }
